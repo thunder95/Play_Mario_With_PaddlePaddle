@@ -1,25 +1,23 @@
-# SuperMario
-A improved supermario game based on https://github.com/justinmeister/Mario-Level-1.
-* support four levels：level 1-1 to level 1-4 
-* support go into the pipe
-* use json file to store level data (e.g. position of enemy, brick, box and pipe)
-* add new enemies in level 1-3 and 1-4 
-* add slider in level 1-2
+# Play SuperMario with PaddlePaddle
+A creative way to play SuperMario game with voice classification and gesture movement recognition.
+All the models were implemented with PaddlePaddle deeplearning framework.
 
-# Requirement
-* Python 3.7
-* Python-Pygame 1.9
+# How to configure your environment
+conda env create -f mario.yaml
 
-# How To Start Game
+# How To Start Game with gesture recognition
 $ python main.py
 
-# How to Play
-* use LEFT/RIGHT/DOWN key to control player
-* use key 'a' to jump
-* use key 's' to shoot firewall or run
+Take at a look at this gif below or watch the video on bilibili: https://www.bilibili.com/video/BV1B64y1i7GM
+
+# How To Start Game with voice classification
+$ python main.py audio
+
+speak with your micronphone to control your Mario role: '左', '右', '下', '停', '跑', '跳', '打'
+
+# How to train your own voice
+please follow the link in more details: https://aistudio.baidu.com/aistudio/projectdetail/3198421
 
 # Demo
-![level_1_1](https://raw.githubusercontent.com/marblexu/PythonSuperMario/master/resources/demo/level_1_1.png)
-![level_1_2](https://raw.githubusercontent.com/marblexu/PythonSuperMario/master/resources/demo/level_1_2.png)
-![level_1_3](https://raw.githubusercontent.com/marblexu/PythonSuperMario/master/resources/demo/level_1_3.png)
-![level_1_4](https://raw.githubusercontent.com/marblexu/PythonSuperMario/master/resources/demo/level_1_4.png)
+![Body_Gesture](https://github.com/thunder95/Play_Mario_With_PaddlePaddle/blob/main/res.gif?raw=true)
+
